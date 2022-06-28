@@ -1,4 +1,160 @@
+/* Universal Styles */
+
+html{
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    background-color: white;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+:root {
+  --spacing-1: 8px;
+  --spacing-2: 12px;
+  --spacing-3: 16px;
+  --spacing-4: 24px;
+}
+
+h2 {
+  margin: 0;
+  margin-bottom: var(--spacing-2);
+  font-size: large;
+  font-weight: bold;
+}
+
+body {
+  margin: 0;
+  padding: 0 var(--spacing-3);
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Navigation */
+
 nav{
-    display: flexbox;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-list {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    align-items: center;
+    margin: 0;
+    margin-left: auto;
+}
+
+.nav-item {
+    margin: var(--spacing-1);
+}
+
+.mobile{
+    display: none;
+}
+
+/* About Section */
+
+.about {
+  display: flex;
+}
+
+.about-text {
+  margin-right: var(--spacing-3);
+}
+
+.portrait {
+    width: 300px;
+    border-radius: var(--border-radius);
+    flex-shrink: 0;
+  }
+
+.about-text h2{
+    font-weight: bolder;
+    font-size: x-large;
+}
+
+.about-text p{
+    margin: 10px 0px;
+}
+
+/* Projects section*/
+
+.project-title h3 {
+  display: inline;
+}
+  
+details {
+  cursor: pointer;
+}
+
+section {
+  padding: var(--spacing-3) 0;
+}
+
+details{
+    margin-bottom: var(--spacing-1);
+}
+  
+
+/* Skills Section */
+
+#skills-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+  
+#skills-container > * {
+  font-size: 2em;
+  width: 2em;
+  margin-top: var(--spacing-1);
+}
+  
+@media only screen and (max-width: 600px) {
+  .about {
     flex-direction: column;
+  }
+
+  .desktop{
+    display: none;
+  }
+
+  .mobile{
+    display: flex;
+  }
+}
+
+/* Footer */
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+}
+
+.contact ul{
+    display: flex;
+}
+
+.contact li{
+    padding-left: 10px;
+}
+
+.social{
+    color: lightgrey;
+}
+
+.social:hover{
+    color:black
 }

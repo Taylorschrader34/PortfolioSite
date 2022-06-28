@@ -3,72 +3,114 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>My Portfolio</title>
+    <title>Taylor Schrader</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./resources/css/reset.css">
+    <link rel="stylesheet" href="./resources/css/style.css">
     <script src="https://kit.fontawesome.com/4f6aae296f.js" crossorigin="anonymous"></script>
   </head>
   
   <body>
     <!-- Header-->
-    <header>
-      <nav class="desktop">
-        <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">About Me</a></li>
-          <li><a href="">Projects</a></li>
-          <li><a href="">Something Neat</a></li>
-        </ul>
-      </nav>
-      <nav class="mobile">
-        <ul>
-          <li><a href=""><i class="fa-solid fa-user"></i></a></li>
-          <li><a href=""><i class="fa-solid fa-circle-info"></i></a></li>
-          <li><a href=""><i class="fa-solid fa-folders"></i></a></li>
-          <li><a href=""><i class="fa-solid fa-circle-question"></i></a></li>
-        </ul>
-      </nav>
-    </header>
-  
-    <!-- Title -->
-    <div class="title">
-      <div class="content">
-        <h1>Welcome!</h1>
-      </div>
-    </div>
+    <nav class="desktop">
+      <ul class="nav-list">
+        <li class="nav-item"><a href="index.html">Home</a></li>
+        <li class="nav-item"><a href="about.html">About Me</a></li>
+        <li class="nav-item"><a href="projects.html">Projects</a></li>
+        <li class="nav-item"><a href="random.html">Random</a></li>
+      </ul>
+    </nav>
+    <nav class="mobile">
+      <ul class="nav-list">
+        <li class="nav-item"><a href="/index.html"><i class="fa-solid fa-user"></i></a></li>
+        <li class="nav-item"><a href="/about.html"><i class="fa-solid fa-info"></i></a></li>
+        <li class="nav-item"><a href="/projects.html"><i class="fa-solid fa-folders"></i></a></li>
+        <li class="nav-item"><a href="/random.html"><i class="fa-solid fa-question"></i></a></li>
+      </ul>
+    </nav>
 
     <!-- Main Content -->
 
-    <div id="MainContent"> 
-    
-      <!-- Gallery Section -->
-      <div id="Gallery">
-        <div class="imageContainer">
-          <img src="./resources/images/profilePic.jpg">
+    <main>
+
+      <section>
+        <div class="about">
+          <div class="about-text">
+            <h2>Taylor Schrader</h2>
+            <p>
+              Some things with some other things to describe other things.
+            </p>
+            <p>
+              Without the other stuff this wouldn't really fit in otherwise we might
+            need something else to do without others and now I really don't know.
+            </p>
+            <p>
+              Wow, there is something else interesting and that descripves other
+            things to do and now the only thing left is something without something else so that
+            something else needs that thing and the only thing stopping it is really the thing that
+            is needed and now I know.
+            </p>
+          </div>
+          <img class="portrait" src="./resources/images/profilePic.jpg">
         </div>
-      </div>
-    
-      <!-- Personal Section -->
-      <div id="Personal">
-        <div class="content">
-          <h2>Taylor Schrader</h2>
-          <h3>Software Developer</h3>
+      </section>
+
+      <section id="projects">
+        <h2>Projects</h2>
+        
+        <details class="project">
+          <summary class="project-title">
+            <h3>Boggle</h3>
+          </summary>
+          <p class="project-description">
+            Java app based on the physical Boggle game, with support for
+            English and Spanish.
+          </p>
+        </details>
+
+        <details class="project">
+          <summary class="project-title">
+            <h3>This portfolio</h3>
+          </summary>
+          <p class="project-description">
+            This page.
+          </p>
+        </details>
+        
+        <details class="project">
+          <summary class="project-title">
+            <h3>Money Manager</h3>
+          </summary>
+          <p class="project-description">
+            In progress: working on money documentation and management app
+            to store data about card/account transactions and spending habbits.
+          </p>
+        </details>
+
+      </section>
+
+      <section id="skills">
+        <h2>Skills</h2>
+        <div id="skills-container">
+          <i class="fab fa-css3-alt"></i>
+          <i class="fab fa-git"></i>
+          <i class="fab fa-github"></i>
+          <i class="fab fa-html5"></i>
+          <i class="fa-brands fa-java"></i>
+          <i class="fab fa-js"></i>
+          <i class="fas fa-terminal"></i>
         </div>
-      </div>
-    
-    </div>
+      </section>
+    </main>
   
     <!-- Footer -->
     <footer>
       <div class="contact">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-      <div class="content">
-        <span class="moto">Moto temp</span>
+        <ul>
+          <li class="social"><i class="fa-brands fa-twitter"></i></li>
+          <li class="social"><i class="fa-solid fa-envelope"></i></li>
+          <li class="social"><i class="fa-brands fa-github"></i></li>
+        </ul>
       </div>
     </footer>
   
