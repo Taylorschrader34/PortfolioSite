@@ -27,9 +27,6 @@ h2 {
 
 body {
   margin: 0;
-  padding: 0 var(--spacing-3);
-  max-width: 900px;
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
 }
@@ -38,7 +35,9 @@ body {
 
 nav{
     display: flex;
-    justify-content: flex-end;
+    background-color: whitesmoke;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 0px 0px 20px rgb(20 20 20 / 25%);
 }
 
 .nav-list {
@@ -46,8 +45,7 @@ nav{
     list-style-type: none;
     padding: 0;
     align-items: center;
-    margin: 0;
-    margin-left: auto;
+    margin-left: var(--spacing-1);
 }
 
 .nav-item {
@@ -59,6 +57,12 @@ nav{
 }
 
 /* About Section */
+
+main{
+    padding: var(--spacing-3) var(--spacing-3);
+    max-width: 800px;
+    margin: 0 auto;
+}
 
 .about {
   display: flex;
@@ -121,15 +125,18 @@ details{
   .about {
     flex-direction: column;
   }
-
-  .desktop{
-    display: none;
-  }
-
-  .mobile{
-    display: flex;
-  }
 }
+
+@media only screen and (max-width: 350px) {
+  
+    .desktop{
+      display: none;
+    }
+  
+    .mobile{
+      display: flex;
+    }
+  }
 
 /* Footer */
 
